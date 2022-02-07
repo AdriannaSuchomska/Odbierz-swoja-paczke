@@ -43,7 +43,9 @@ p {
 
 .alert {
     color: #E71905;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 1px;
     padding: 0;
     margin: 0;
     height: 10px;
@@ -56,24 +58,20 @@ label {
 input {
     outline: 0;
     background-color: #d0d3d370;
-    border: 0.01px solid black;
+    border: 1px solid black;
     border-radius: 5px;
     margin-top: 5px;
-    height: 20px;
-    /* width: 100%; */
+    height: 25px;
     font-family: 'Lato', sans-serif;
 }
 
 
 input:valid {
-    border-color: green;
-    content: '✓';
+    border: 2px solid green;
 }
 
 input:focus:invalid  {
-    border-color: red;
-    content: '✖';
-    
+    border: 2px solid red;
 }
 
 

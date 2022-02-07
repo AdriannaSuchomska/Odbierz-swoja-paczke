@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odbierz paczkę Poczty Polskiej</title>
     <link rel="stylesheet" href=".//styles/main.css">
+    <link rel="stylesheet" href=".//styles/modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 
@@ -32,10 +33,26 @@
             </div>
         </div>
         <button id="myBtn" disabled>Odbierz paczkę</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h1>Paczka odebrana !</h1>
+                <img src="./images/paczka.png" alt="paczka" class="paczka">
+                <p>
+                    Zrobiłeś to w czasie 10 sekund!<br>
+                    Czy możemy zrobić dla Ciebie coś jeszcze ?
+                </p>
+                <div id="buttons">
+                    <button type="button" name="closeBtn" class="modalBtn" ONCLICK="window.location.href='./index.html'">To
+                        wszystko na dziś</button>
+                    <button type="button" name="continueBtn" class="modalBtn"
+                        ONCLICK="window.location.href='./receive.html'">Odbierz kolejną paczkę</button>
+                </div>
+            </div>
+        </div>
     </div>
-
-
+    
     <script src="./scripts/receive.js"></script>
+    <script src="./scripts/modal.js"></script>
 </body>
 
 </html>
