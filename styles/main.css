@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(245, 243, 243);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.logo {
+    width: 60%;
+}
+
+p {
+    margin: 20px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+#inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 80%;
+    
+}
+
+.oneInput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+}
+
+.alert {
+    color: #E71905;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    height: 10px;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+}
+
+input {
+    outline: 0;
+    background-color: #d0d3d370;
+    border: 0.01px solid black;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 20px;
+    /* width: 100%; */
+    font-family: 'Lato', sans-serif;
+}
+
+
+input:valid {
+    border-color: green;
+    content: '✓';
+}
+
+input:focus:invalid  {
+    border-color: red;
+    content: '✖';
+    
+}
+
+
+
+#myBtn {
+    background-image: linear-gradient(to right, #E71905 0%, #e718059f  51%, #E71905  100%);
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 2px;
+      text-align: center;
+      font-family: 'Lato', sans-serif;;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;            
+      box-shadow: 0 0 20px #eee;
+      border-radius: 10px;
+      border: none;
+      margin-top: 20px;
+      margin-bottom: 40px;   
+   }
+
+   
+#myBtn:disabled {
+    background-image: none;
+    background-color: rgba(88, 86, 86, 0.747);
+    background-position: right center;  
+    color: #fff;
+    text-decoration: none;
+  } 
+ 
+
+   #myBtn:hover {
+    background-position: right center;  
+    color: #fff;
+    text-decoration: none;
+  } 
+ 
+
+
+
+  @media only screen and (max-width: 650px) {
+
+    #inputs {
+        display: flex;
+        flex-direction:column ; 
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 450px) {
+
+    #myBtn {
+        
+        width: 80%;
+     
+       }
+
+}

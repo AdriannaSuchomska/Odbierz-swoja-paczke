@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odbierz paczkę Poczty Polskiej</title>
+    <link rel="stylesheet" href=".//styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">
+        <img src="./images/logo2.png" alt="logo" class="logo">
+        <p>
+            Możesz mieć swoją przesyłkę w kilkanaście sekund. <br>
+            Rozpocznij klikając w przycisk.
+        </p>
+        <div id="inputs">
+            <div class="oneInput">
+                <label for="name">Numer telefonu:</label>
+                <input type="tel" id="phone" name="phone"
+                    pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3}$" required>
+                <p class="alert" id="phoneAlert"></p>
+            </div>
+            <div class="oneInput">
+                <label for="name">Kod odbioru:</label>
+                <input type="text" id="code" name="code" minlength="4" required>
+                <p class="alert" id="codeAlert"></p>
+            </div>
+        </div>
+        <button id="myBtn" disabled>Odbierz paczkę</button>
+    </div>
+
+
+    <script src="./scripts/receive.js"></script>
+</body>
+
+</html>
